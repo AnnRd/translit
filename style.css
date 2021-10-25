@@ -27,7 +27,7 @@ body{
 
 #russian {
   width: 300px;
-  min-height: 400px;
+  height: 300px;
   background-color:rgb(163, 202, 238);
   border: solid;
   border-color: rgb(175, 175, 177);
@@ -37,7 +37,7 @@ body{
 
 #english {
   width: 300px;
-  min-height: 400px;
+  height: 300px;
   background-color:rgb(163, 202, 238);
   border: solid;
   border-color: rgb(175, 175, 177);
@@ -48,17 +48,18 @@ body{
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  
 }
 
 .word-style {
   color: rgb(69, 69, 141);
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Zen Kurenaido', sans-serif;
 }
 
 .container {
   max-width: 650px;
-  max-height: 1200;
+  max-height: 650;
   margin: 0 auto;
 }
 
@@ -79,9 +80,23 @@ body{
   .container{
     max-width: none;
   }
+  .translit-block{
+    display: block;
+    justify-content: center;
+  }
+  #russian{
+    margin: 0 auto;
+    margin-bottom: 2.5px;
+    
+  }
+  #english{
+    margin: 0 auto;
+    margin-top: 2.5px;
+    
+  }
 }
 
-@media (max-height: 1200px) {
+/* @media (max-height: 1200px) {
   .container{
     max-height: 970px;
   }
@@ -97,4 +112,7 @@ body{
   .container{
     max-height: none;
   }
-}
+  .translit-block{
+    display: block;
+  }
+} */
