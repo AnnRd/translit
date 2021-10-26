@@ -6,10 +6,12 @@ function translitUserWord(){
   console.log(userWordValue);
   let rusWord = document.createElement('div');
   rusWord.innerText = userWordValue;
+  rusWord.className = 'rusWordStyle';
   let rusWordBlock = document.getElementById('russian')
   rusWordBlock.appendChild(rusWord)
 };
 
 translitButton.addEventListener('click', translitUserWord);
+
 
 

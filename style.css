@@ -63,6 +63,17 @@ body{
   margin: 0 auto;
 }
 
+.rusWordStyle {
+  width: 100px;
+  height: 24px;
+  overflow: hidden;
+  text-overflow:ellipsis
+}
+
+.rusWordStyle:hover::after {
+  content:attr(data-title)
+}
+
 @media (max-width: 650px) {
   .container{
     max-width: 420px;
@@ -96,23 +107,3 @@ body{
   }
 }
 
-/* @media (max-height: 1200px) {
-  .container{
-    max-height: 970px;
-  }
-}
-
-@media (max-height: 750px) {
-  .container{
-    max-height: 970px;
-  }
-}
-
-@media (max-height: 767px) {
-  .container{
-    max-height: none;
-  }
-  .translit-block{
-    display: block;
-  }
-} */
