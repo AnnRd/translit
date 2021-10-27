@@ -7,6 +7,7 @@ function translitUserWord(){
   let rusWord = document.createElement('div');
   rusWord.innerText = userWordValue;
   rusWord.className = 'rusWordStyle';
+  rusWord.setAttribute('data-title', userWordValue)
   let rusWordBlock = document.getElementById('russian')
   rusWordBlock.appendChild(rusWord)
 };

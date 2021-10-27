@@ -70,8 +70,16 @@ body{
   text-overflow:ellipsis
 }
 
+/* .word-style::after { 
+  content: attr(data-title); 
+ } */
+
 .rusWordStyle:hover::after {
-  content:attr(data-title)
+  content:attr(data-title);
+  position: absolute; 
+  /* left: 30%; top: 30%;  */
+  z-index: 1;
+  background-color: rgb(105, 156, 214);
 }
 
 @media (max-width: 650px) {
