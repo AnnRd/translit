@@ -13,14 +13,18 @@ body{
 
 #input{
   width: 200px;
-  height: 23px;
+  height: 25px;
+  font-size: 19px;
   background-color:rgb(163, 202, 238);
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
   color: rgb(69, 69, 141);
 }
 
 #button{
   width: 100px;
+  height: 25px;
+  font-size: 15px;
   margin-top: 10px;
   background-color: rgb(128, 128, 252);
 }
@@ -32,6 +36,8 @@ body{
   border: solid;
   border-color: rgb(175, 175, 177);
   margin-right: 2px;
+  display: flex;
+  flex-direction: column; /*flex чтобы блоки слов занимали ограниченное пространство*/
 }
 
 
@@ -42,45 +48,66 @@ body{
   border: solid;
   border-color: rgb(175, 175, 177);
   margin-left: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 .translit-block {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 30px;
   
 }
 
 .word-style {
   color: rgb(69, 69, 141);
-  font-size: 16px;
-  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 19px;
+  font-family: 'Comfortaa', cursive;
 }
 
 .container {
   max-width: 650px;
   max-height: 650;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .rusWordStyle {
   width: 100px;
   height: 24px;
+  margin-top: 5px;
   overflow: hidden;
-  text-overflow:ellipsis
+  text-overflow:ellipsis;
+}
+
+.engWordStyle {
+  width: 100px;
+  height: 24px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow:ellipsis;
 }
 
 /* .word-style::after { 
   content: attr(data-title); 
  } */
 
-.rusWordStyle:hover::after {
+.rusWordStyle:hover::before {
   content:attr(data-title);
   position: absolute; 
-  /* left: 30%; top: 30%;  */
+  left: 490px; 
   z-index: 1;
   background-color: rgb(105, 156, 214);
 }
+
+.engWordStyle:hover::before {
+  content:attr(data-title);
+  position: absolute; 
+  left: 791px; 
+  z-index: 1;
+  background-color: rgb(105, 156, 214);
+}
+
 
 @media (max-width: 650px) {
   .container{
