@@ -2,8 +2,6 @@ body{
   background-color:rgb(196, 228, 243)
 }
 
-
-
 .input-button{
   display: flex;
   flex-direction: column;
@@ -39,7 +37,6 @@ body{
   display: flex;
   flex-direction: column; /*flex чтобы блоки слов занимали ограниченное пространство*/
 }
-
 
 #english {
   width: 300px;
@@ -88,10 +85,6 @@ body{
   text-overflow:ellipsis;
 }
 
-/* .word-style::after { 
-  content: attr(data-title); 
- } */
-
 .rusWordStyle:hover::before {
   content:attr(data-title);
   position: absolute; 
@@ -107,7 +100,6 @@ body{
   z-index: 1;
   background-color: rgb(105, 156, 214);
 }
-
 
 @media (max-width: 650px) {
   .container{
